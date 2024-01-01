@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Indian Flag</title>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <script>
+
+        $(document).ready(function(){
+            $("img").click(function() {
+                $("img").hide(2000);
+                $("img").show(2000);
+            });
+            $("#flag").click(function() {
+                $("#main").hide(2000);
+                $("#main").show(2000);
+                $("#pole").hide(2000);
+                $("#pole").show(2000);
+
+                $("img").hide(4000);
+                $("img").show(2000);
+
+            });
+
+        });
+
+    </script>
+
+    <style>
+     #red{
+            height: 100px;
+            width: 300px;
+            background-color: red;
+        }
+        #white{
+           
+            background-color: white;
+        }
+        #green{
+            height: 100px;
+            width: 300px;
+            background-color: green;
+        }
+        #pole{
+            height: 700px;
+            width: 10px;
+            background-color: rgb(0, 42, 255);
+            display: inline-block;
+
+        } 
+
+        #main{
+            height: 300px;
+            width: 300px;
+            background-color: aqua;
+        }
+
+        #flag{
+            width: 310px;
+            display: grid;
+            grid-template-columns: 1fr 10fr;
+            grid-template-rows: 10fr 1fr;
+        }
+
+        #main{
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr 1fr 1fr;
+        }
+
+        img{
+            height: 103.5px;
+            position: relative;
+            top:-671px;
+            left: 100px;
+        }
+
+        h1{
+            text-align: center;
+            color: rgb(136, 0, 255);
+        }
+        hr{
+            border: 3px groove rgb(9, 255, 0);
+            width: 400px;
+        }
+        h5{
+            position: relative;
+            left: 80%;
+            top: -200px
+        }
+        
+    </style>
+
+
+  </head>
+
+
+  <body>
+
+
+<h1>Indian Flag</h1>
+<hr>
+<br><br>
+
+    <div id="flag">
+
+      <div id="pole"></div>
+
+      <div id="main">
+        <div id="red"></div>
+        <div id="white"></div>
+        <div id="green"></div>
+      </div>
+    </div>
+
+
+    <img src="https://i.pinimg.com/originals/24/fb/a6/24fba6bd89ce14b8218dd2ef85f5be72.gif" alt="ashok chakra">
+
+
+<h5>@ Bappi Gorain</h5>
+
+
+  </body>
+</html>
