@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script
+    src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+</script>
+
+<script>
+    $(document).ready(function(){
+        $("#b1").click(function() {
+            $("#inp1").val($("#par1").text());
+        });
+
+        $("#b2").click(function() {
+            $("#par2").text($("#inp2").val());
+        });
+
+        $("#b3").mousedown(function() {
+            $("p1").attr("href", "https://www.google.com");
+        });
+
+        $("#append").click(function() {
+            $("p2").append("at the end")
+        })
+
+        $("#prepend").click(function() {
+            $("p3").prepend("Append content");
+        });
+
+        $(".appendtext").click(function() {
+            $("body").append("<p>paragraph1<p>");
+            // $("body").text("paragraph2");
+            $("p5").prepend("<p>paragraph3</p>");
+        });
+
+        $(".remove").click(function() {
+            $("p6").remove();
+        });
+
+        $(".empty").click(function() {
+            $(".div1").empty();
+        });
+
+        $(".add").click(function() {
+            $("h2").addClass("head2");
+        });
+
+        $(".remove").click(function() {
+            $("h3").removeClass("head3");
+        });
+
+        $(".Toggles").click(function() {
+            $("h2").toggleClass("head2");
+        });
+
+
+
+    });
+
+
+</script>
+
+<style>
+    .head2{
+        color: red;
+    }
+    
+    .head3{
+        color: rgb(0, 60, 255);
+    }
+</style>
+
+
+</head>
+<body>
+    <p id="par1"> This is our first paragraph</p>
+    <p id="par2"> This is our second paragraph</p>
+    <p>Input filed: <input type="text" id="inp1" value=""> </p>
+    <p>Input filed: <input type="text" id="inp2" value=""> </p>
+
+    <button id="b1"> Button1</button>
+    <button id="b2"> Button2</button>
+
+<br><br>
+
+    <p1> <a href="https://www.youtube.com">youtube</a></p1>
+    <button id="b3">button</button>
+
+
+
+
+
+
+<h1>Example of Append,prepend</h1>
+
+
+<p2> Append content  </p2> <br> <br>
+<p3> at the front </p3> <br> <br>
+<button id="append">append </button> 
+<button id="prepend">prepend</button>
+
+
+
+<hr><hr><br><br>
+
+
+<button class="appendtext">Append text</button> 
+<p5></p5>  
+
+
+
+<h1>Example of Remove</h1>
+<hr><hr><br><br>
+<div >
+
+    <p6 style="background-color: rgb(226, 43, 195); height: 20px; width: 100px">paragraph 6</p6>
+
+    <div class="div1" style="background-color: blueviolet; height: 20px; width: 100px">paragraph 7</div><br>
+
+
+</div>
+
+<button class="remove">Remove paragraph 6</button>
+<button class="empty">empty paragraph 7</button>
+<br><br>
+<hr><hr>
+
+<h1>Example of add class and remove class</h1>
+
+<h2>This is heading 2</h2>
+<h3 class="head3">This is heading 3</h3>
+<button class="add">Add class</button>
+<button class="remove">Remove class</button>
+
+<button class="Toggles">Toggle class on heading 2</button>
+
+</body>
+</html>
